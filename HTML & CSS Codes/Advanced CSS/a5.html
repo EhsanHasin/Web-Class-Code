@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            margin-top: 20px;
+            color: white;
+            font-size: xx-large;
+        }
+        .box1{
+            transform: translate(250px);
+        }
+        .box2{
+            transition: transform 1s;
+            /* transition: background-color 1s; */
+        }
+        .box2:hover{
+            transform: scale(110%);
+            /* background-color: yellowgreen; */
+        }
+        .box3{
+            transform: rotate(45deg);
+        }
+        .box4{
+            transform: skewX(45deg)
+        }
+        .box5{
+            transition-duration: 1s;
+            transition-property: transform;
+            /* transition-delay: 500ms; */
+        }
+        .box5:hover{
+            transform: rotate(5deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        translate
+    </div>
+    <div class="box2">
+        scale
+    </div>
+    <div class="box3">
+        rotate
+    </div>
+    <div class="box4">
+        skewX
+    </div>
+    <div class="box5">
+        transition with transform
+    </div>
+</body>
+</html>

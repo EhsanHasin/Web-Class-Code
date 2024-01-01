@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    margin-top: 30px;
+}
+
+.container{
+    margin-top: 5px;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+.header-sub{
+    height: 500px;
+    width: 42%;
+    float: left;
+    
+}
+#header-sub-one{
+    background-color: #01c1ec;
+    border-radius: 30px;
+    padding: 20px;
+}
+#header-sub-one img{
+    background-color: white;
+    border-radius: 50%;
+}
+
+#header-sub-one h1{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+#header-sub-one p{
+    text-align: justify;
+}

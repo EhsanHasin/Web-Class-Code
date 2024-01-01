@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in HTML</title>
+    <style>
+        #btn1{
+            background-color: green;
+        }
+        #btn2{
+            background-color: red;
+        }
+        #btn3{
+            background-color: blue;
+        }
+        button{
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id="p1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi debitis quas inventore libero repellat provident nemo, voluptatem fuga quibusdam! Nam similique repellendus voluptatem non a nemo! Aliquid quaerat neque repellat?
+    </p>
+    <button id="btn1" onclick="test()">OK</button>
+    <button id="btn2" onclick="test2()">Cancel</button>
+    <button id="btn3" onclick="test3()">Change Paragraph</button>
+
+    <script>
+        function test(){
+            window.alert("We learn JS");
+        }
+        function test2(){
+            window.alert("Cancel");
+        }
+        function test3() {
+            document.getElementById('p1').innerHTML = "This is a new Paragraph";
+        }
+    </script>
+</body>
+</html>

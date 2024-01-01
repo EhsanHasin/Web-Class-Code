@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Note Management System</h3>
+    <input type="text" id="in1" placeholder="Note Title" >
+    <br>
+    <textarea name="te" id="in2" cols="19" rows="7" placeholder="Note Message"></textarea>
+    <br>
+    <input type="button" value="Add" onclick="add();">
+    
+    <p id="p1"></p>
+
+    <script>
+        function add() {
+            var x = document.getElementById("in1").value;
+            var y = document.getElementById("in2").value;
+            document.getElementById("p1").innerHTML += x +"<br>"+ y + "<br>";
+            document.getElementById("in1").value = "";
+            document.getElementById("in2").value = "";
+        }
+    </script>
+</body>
+</html>

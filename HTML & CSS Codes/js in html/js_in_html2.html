@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript in HTML</title>
+    <noscript>
+        JS is not supported in your browser.
+    </noscript>
+    <style>
+        p{
+            color: blue;
+        }
+    </style>
+
+    <script>
+        function changeContent(){
+            document.getElementById('p1').innerHTML = "new text";
+        }
+        function changeAttributeValue(){
+            document.getElementById('p1').title = "This is a new Title";
+            document.getElementById('img1').src = "pictures/zombie.png";
+        }
+        function changeStyleValue(){
+            document.getElementById('p1').style.color = "red";
+        }
+    </script>
+
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id="p1" title="this is a Paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi debitis quas inventore libero repellat provident nemo, voluptatem fuga quibusdam! Nam similique repellendus voluptatem non a nemo! Aliquid quaerat neque repellat?
+    </p>
+    <p id="p2" title="this is a Paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi debitis quas inventore libero repellat provident nemo, voluptatem fuga quibusdam! Nam similique repellendus voluptatem non a nemo! Aliquid quaerat neque repellat?
+    </p>
+    <img id="img1" src="pictures/cold-face.png" alt="">
+    <button id="btn1" onclick="changeContent()">Change content</button>
+    <button id="btn2" onclick="changeAttributeValue()">Change attribute value</button>
+    <button id="btn3" onclick="changeStyleValue()">Change style value</button>
+</body>
+</html>

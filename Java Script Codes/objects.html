@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1 id="hh" title="ttttt" class="clas" style="color: red;">Object</h1>
+    <button onclick="fun1()" onmouseover="fun2()" onmouseout="fun3()">OK</button>
+
+    <form action="#" method="get" onsubmit="fun4()">
+        <input type="text"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+
+        function fun1(params) {
+            window.alert('test')
+        }
+        function fun2(params) {
+            console.log("hover");
+        }
+        function fun3(params) {
+            console.log("hover out");
+        }
+
+        function fun4(params) {
+            alert("Form submitted successfully :)");
+        }
+
+        //defining objects
+        var person = {
+            id: 1000,
+            name: "Foo",
+            age: 25,
+            isMarried: true
+        };
+
+        var book = {
+            pages: 2000,
+            name: "JS in one day",
+
+        };
+
+        var phone = {};
+
+
+        //acceccing to propeties
+        console.log(person);
+        console.log(person.id);
+        console.log(person.name);
+        person.name = "Ahmad";
+        console.log(person.name);
+
+
+        console.log(phone);
+        phone.color = "Red";
+        phone.price = 2333333;
+        console.log(phone);
+
+        // var h = document.getElementById("hh");
+        // console.log(h.id);
+        // console.log(h.title);
+        // h.class = 'new class';
+        // console.log(h.class);
+        // console.log(h.style.color);
+
+        //new person
+        var person2 = {
+            id: 1000,
+            fn: "Foo",
+            ln: "Bar",
+            age: 25,
+            isMarried: true,
+            speak: function(){
+                console.log("speaking...");
+            },
+            walk: function(){
+                console.log("walking....");
+            },
+            getFullName: function(){
+                console.log("My full name is " + this.fn + " " + this.ln);
+            }
+        };
+        
+        person2.speak();
+        person2.walk();
+        person2.getFullName();
+
+    </script>
+</body>
+</html>

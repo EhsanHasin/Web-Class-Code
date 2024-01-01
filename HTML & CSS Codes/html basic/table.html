@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, tr, td, th{
+            border: 2px dashed orange;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td{
+            /* text-align: center; */
+            padding: 10px;
+        }
+        #tr1{
+            background-color: green;
+        }
+        /* tr:nth-child(even){
+            background-color: green;
+        } */
+    </style>
+</head>
+<body>
+    <h1>TAble</h1>
+    <table>
+        <tr id="tr1">
+            <th>Id</th>
+            <th>Name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td>Foo</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2000</td>
+            <td>Bar</td>
+            <td>55</td>
+        </tr>
+        <tr>
+            <td>3000</td>
+            <td>Baz</td>
+            <td>15</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var, let and const</title>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+    <script>
+        var a = 3, b = 4;
+
+        //JavaScript Arithmetic Operators
+        console.log(a+b);
+        console.log(a-b);
+        console.log(a*b);
+        console.log(a/b);
+        console.log(a**b);
+        console.log(a%b);
+
+        console.log('------------------------');
+
+        //JavaScript Assignment Operators
+        // a = a + 10;
+        console.log(a += 10);
+        console.log(a -= 10);
+        console.log(a /= 10);
+        console.log(a *= 10);
+        console.log(a **= 10);
+        console.log(a %= 10);
+
+        console.log('------------------------');
+
+        //extra
+        console.log("Foo" + "Bar");
+        console.log(4 + "foo");
+        console.log(4 + 3 + "foo");
+        console.log("foo" + 4 + 3);
+
+
+        //JavaScript Comparison Operators
+        console.log('------------------------');
+        var i = 3, j = 4;
+        console.log(i == j);
+        console.log(i > j);
+        console.log(i < j);
+        console.log(i != j);
+        console.log(i === j);
+        console.log(i !== j);
+        console.log('3' === '3');
+        console.log(3 === '3');
+
+        //? oprator
+        var age = 22;
+        var canRegister;
+        // if(age >= 18){
+        //     canRegister = 'you can register';
+        // }else{
+        //     canRegister = 'you can not register';
+        // }
+        canRegister = age >= 18 ? 'you can register': 'you can not register'; 
+        console.log(canRegister);
+        console.log(3>4 && 2==2 ? 500 : 1000);
+
+
+        //JavaScript Type Operators
+        var q = 34;
+        var w = 'foo';
+        var e;
+        var r = true;
+        console.log(typeof q);
+        console.log(typeof w);
+        console.log(typeof e);
+        console.log(typeof r);
+
+        var person = {
+            id: 1000,
+            fn: 'foo',
+            ln: 'bar'
+        };
+        console.log(typeof person);
+
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Template #1</title>
+    <style>
+        
+        form{
+            margin: auto;
+            padding: 30px;
+            width: 30%;
+            border: 3px solid ghostwhite;
+        }
+        #lbl1{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+        input{
+            padding: 10px;
+            text-align: start;
+        }
+        input[type="checkbox"]{
+            margin: 20px 0px 0px 0px;
+        }
+        input[type="button"]{
+            background-color: rgb(85, 85, 246);
+            border: none;
+            width: 100%;
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            margin: 15px 0px;
+        }
+        input[type='email']{
+            width: 90%;
+        }
+        input[type='password']{
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <label id="lbl1" for="">Please Login</label>
+        <br>
+        <br>
+        <input type="email" placeholder="Email Address"><br>
+        <input type="password" placeholder="Password"><br>
+        <input type="checkbox" value="rm">
+        <label for="">Remember Me</label><br>
+        <input type="button" value="Login">
+    </form>
+</body>
+</html>

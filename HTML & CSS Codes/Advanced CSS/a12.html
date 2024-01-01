@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB</title>
+    <style>
+        p{
+            /* width: 200px; */
+            /* height: 100px; */
+            background-color: aquamarine;
+            font-size: xx-large;
+            padding: 30px;
+            margin: 5px;
+        }
+
+        .flex-container{
+            display: flex;
+            background-color: antiquewhite;
+            /* height: 400px; */
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* flex-flow: wrap row; */
+            /* justify-content: space-between; */
+            /* align-items: start; */
+            /* align-content: start; */
+        }
+        
+        .flex-item{
+            width: 200px;
+        }
+        .item1{
+            /* height: 200px; */
+            /* flex: 1; */
+            order: 4;
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            
+        }
+        .item2{
+            /* height: 200px; */
+            /* flex: 2; */
+            order: 3;
+            /* align-self: flex-start; */
+            /* flex-shrink: 3; */
+        }
+        .item3{
+            /* height: 200px; */
+            /* flex: 1; */
+            order: 2;
+            /* flex-shrink: 3; */
+        }
+        .item4{
+            /* height: 200px; */
+            /* flex: 1; */
+            order: 1;
+            /* flex-shrink: 3; */
+        }
+        .item5{
+            /* height: 200px; */
+            /* flex: 1; */
+            order: 5;
+            flex-shrink: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <p class="flex-item item1">1</p>
+        <p class="flex-item item2">2</p>
+        <p class="flex-item item3">3</p>
+        <p class="flex-item item4">4</p>
+        <p class="flex-item item5">5</p>
+    </div>
+</body>
+</html>

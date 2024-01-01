@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1{
+            -webkit-box-reflect: right 40px;
+        }
+        p{
+            width: 200px;
+            -webkit-box-reflect: right;
+        }
+        .img2{
+            border: 1px solid blue;
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            object-position: -160px;
+        }
+        .img3{
+            width: 200px;
+            height: 200px;
+            /* -webkit-mask-image: url(/pictures/zombie.png); */
+            -webkit-mask-image: linear-gradient(to left, black, transparent);
+            -webkit-mask-repeat: repeat;
+        }
+    </style>
+</head>
+<body>
+    <button title="click the btn">ok</button>
+    <img class="img1" src="/pictures/zombie.png" alt="">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quod ducimus cupiditate rem optio quibusdam architecto vitae? Soluta iusto dolor dolore exercitationem esse, sed quasi consectetur quidem totam obcaecati ratione.
+    </p>
+
+    <img class="img2" src="/pictures/photo_2021-01-03_22-27-22.jpg" alt="">
+    <img class="img3" src="/pictures/photo_2021-01-03_22-27-22.jpg" alt="">
+</body>
+</html>
